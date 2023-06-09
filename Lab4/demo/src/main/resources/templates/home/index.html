@@ -1,0 +1,48 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <th:block th:replace="layout :: link-css"></th:block>
+    <title>UNG DUNG QUAN LY SACH</title>
+    <style>
+      /* Thêm CSS để thiết kế form liên hệ */
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      input,
+      textarea {
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #DCDCDC;
+      }
+
+      input[type="submit"] {
+        background-color: #666666;
+        color: #f6f6f6;
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+    <th:block th:replace="layout :: header"></th:block>
+    <div class="container">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    TRANG CHU UNG DUNG QUAN LY SACH
+                </a>
+            </div>
+
+        </nav>
+    </div>
+    <th:block th:replace="layout :: footer"></th:block>
+</body>
+</html>
